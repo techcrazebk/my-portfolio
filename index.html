@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. [Your Name] — PhD Scholar & Researcher</title>
+  <meta name="description" content="PhD Scholar portfolio — research, publications, conferences, teaching, and more."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#about" class="nav-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Dr. Your Name</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#resume" class="nav-link">Resume / CV</a>
+      <a href="#publications" class="nav-link">Publications</a>
+      <a href="#conferences" class="nav-link">Conference Talks</a>
+      <a href="#teaching" class="nav-link">Teaching</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="https://techcrazebk.medium.com/" target="_blank" class="nav-link nav-blog">
+        <i class="fab fa-medium"></i> Blog
+      </a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun"><i class="fas fa-sun"></i></span>
+        <span class="theme-icon moon"><i class="fas fa-moon"></i></span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════ HERO / ABOUT ═══════════════════ -->
+<section id="about" class="section hero-section">
+  <div class="hero-bg-blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <div class="container hero-grid">
+    <!-- LEFT: Photo + Identity -->
+    <div class="hero-identity" data-aos="fade-right">
+      <div class="photo-frame">
+        <div class="photo-ring"></div>
+        <img src="images/profile.jpg" alt="Profile photo" class="profile-photo" id="profilePhoto"
+             onerror="this.src='https://ui-avatars.com/api/?name=Your+Name&size=300&background=4DACD9&color=fff&bold=true&font-size=0.33'"/>
+        <div class="photo-badge"><i class="fas fa-graduation-cap"></i></div>
+      </div>
+
+      <div class="identity-info">
+        <h1 class="hero-name">Your Name</h1>
+        <p class="hero-title">PhD Scholar</p>
+        <p class="hero-affil"><i class="fas fa-university"></i> Your University / Institute</p>
+        <p class="hero-dept"><i class="fas fa-flask"></i> Department of Your Field</p>
+      </div>
+
+      <!-- Social icons -->
+      <div class="social-icons">
+        <a href="mailto:your@email.com" class="social-btn" title="Email" data-tooltip="Email">
+          <i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/yourphone" target="_blank" class="social-btn" title="WhatsApp" data-tooltip="WhatsApp">
+          <i class="fab fa-whatsapp"></i></a>
+        <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" class="social-btn" title="Google Scholar" data-tooltip="Google Scholar">
+          <i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.researchgate.net/profile/YourName" target="_blank" class="social-btn" title="ResearchGate" data-tooltip="ResearchGate">
+          <i class="fab fa-researchgate"></i></a>
+        <a href="https://linkedin.com/in/yourname" target="_blank" class="social-btn" title="LinkedIn" data-tooltip="LinkedIn">
+          <i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com/@yourchannel" target="_blank" class="social-btn" title="YouTube" data-tooltip="YouTube">
+          <i class="fab fa-youtube"></i></a>
+        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="social-btn" title="ORCID" data-tooltip="ORCID">
+          <i class="fab fa-orcid"></i></a>
+        <a href="https://techcrazebk.medium.com/" target="_blank" class="social-btn" title="Medium Blog" data-tooltip="Medium">
+          <i class="fab fa-medium"></i></a>
+        <a href="https://github.com/yourgithub" target="_blank" class="social-btn" title="GitHub" data-tooltip="GitHub">
+          <i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourhandle" target="_blank" class="social-btn" title="Twitter/X" data-tooltip="Twitter/X">
+          <i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Bio -->
+    <div class="hero-bio" data-aos="fade-left">
+      <div class="bio-label"><span>About Me</span></div>
+      <h2 class="bio-heading">Researcher. Scholar. <br/>Innovator.</h2>
+      <p class="bio-text">
+        I am a PhD scholar specializing in <strong>[Your Research Area]</strong> at 
+        <strong>[Your University]</strong>. My research focuses on 
+        [brief description of your work — e.g., "developing novel machine learning approaches 
+        for biomedical data analysis, with applications in early disease detection and 
+        personalized medicine"].
+      </p>
+      <p class="bio-text">
+        I have published research in leading peer-reviewed journals and presented at 
+        international conferences. I am passionate about bridging the gap between 
+        theoretical foundations and real-world impact.
+      </p>
+
+      <div class="bio-highlights">
+        <div class="highlight-card">
+          <span class="hl-number" data-count="12">0</span>
+          <span class="hl-label">Publications</span>
+        </div>
+        <div class="highlight-card">
+          <span class="hl-number" data-count="8">0</span>
+          <span class="hl-label">Conferences</span>
+        </div>
+        <div class="highlight-card">
+          <span class="hl-number" data-count="150">0</span>
+          <span class="hl-label">Citations</span>
+        </div>
+        <div class="highlight-card">
+          <span class="hl-number" data-count="4">0</span>
+          <span class="hl-label">Years Research</span>
+        </div>
+      </div>
+
+      <div class="bio-cta">
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        <a href="resume.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Research logos bar -->
+  <div class="research-logos-bar">
+    <div class="logos-label">Affiliated With / Tools & Platforms</div>
+    <div class="logos-track">
+      <div class="logo-pill" title="IEEE"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/IEEE_logo.svg" alt="IEEE" onerror="this.parentElement.innerHTML='<span>IEEE</span>'"/></div>
+      <div class="logo-pill" title="Springer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Springer_logo.svg/200px-Springer_logo.svg.png" alt="Springer" onerror="this.parentElement.innerHTML='<span>Springer</span>'"/></div>
+      <div class="logo-pill" title="Elsevier"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Elsevier_logo_2019.svg/200px-Elsevier_logo_2019.svg.png" alt="Elsevier" onerror="this.parentElement.innerHTML='<span>Elsevier</span>'"/></div>
+      <div class="logo-pill" title="arXiv"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ArXiv_logo_2022.png" alt="arXiv" onerror="this.parentElement.innerHTML='<span>arXiv</span>'"/></div>
+      <div class="logo-pill" title="Google Scholar"><i class="fas fa-graduation-cap" style="font-size:1.8rem;color:#4285F4"></i></div>
+      <div class="logo-pill" title="ResearchGate"><i class="fab fa-researchgate" style="font-size:1.8rem;color:#00CCBB"></i></div>
+      <div class="logo-pill" title="ORCID"><i class="fab fa-orcid" style="font-size:1.8rem;color:#A6CE39"></i></div>
+      <div class="logo-pill" title="GitHub"><i class="fab fa-github" style="font-size:1.8rem"></i></div>
+      <div class="logo-pill" title="Kaggle"><i class="fab fa-kaggle" style="font-size:1.8rem;color:#20BEFF"></i></div>
+      <div class="logo-pill" title="Python"><i class="fab fa-python" style="font-size:1.8rem;color:#3776AB"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ RESUME / CV ═══════════════════ -->
+<section id="resume" class="section resume-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Curriculum Vitae</span>
+      <h2 class="section-title">Resume & Academic Journey</h2>
+      <p class="section-sub">A snapshot of my academic background, work experience, and achievements.</p>
+    </div>
+
+    <div class="resume-grid">
+      <!-- Education -->
+      <div class="resume-col" data-aos="fade-right">
+        <div class="resume-col-header"><i class="fas fa-user-graduate"></i> Education</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2021 – Present</span>
+              <h4 class="tl-title">Doctor of Philosophy (PhD)</h4>
+              <p class="tl-place"><i class="fas fa-university"></i> Your University</p>
+              <p class="tl-desc">Thesis: "Your Thesis Title Here" — Supervisor: Prof. XYZ</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2019 – 2021</span>
+              <h4 class="tl-title">Master of Technology / M.Sc</h4>
+              <p class="tl-place"><i class="fas fa-university"></i> Your University</p>
+              <p class="tl-desc">Specialization: [Your Field] | CGPA: X.XX/10</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2015 – 2019</span>
+              <h4 class="tl-title">Bachelor of Engineering / B.Sc</h4>
+              <p class="tl-place"><i class="fas fa-university"></i> Your University</p>
+              <p class="tl-desc">Specialization: [Your Field] | Percentage: XX%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="resume-col" data-aos="fade-left">
+        <div class="resume-col-header"><i class="fas fa-briefcase"></i> Experience</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-dot tl-dot--accent"></div>
+            <div class="tl-content">
+              <span class="tl-year">2021 – Present</span>
+              <h4 class="tl-title">Junior Research Fellow (JRF)</h4>
+              <p class="tl-place"><i class="fas fa-flask"></i> Research Lab / Institute</p>
+              <p class="tl-desc">Working on [description]. Funded by [grant/agency].</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot tl-dot--accent"></div>
+            <div class="tl-content">
+              <span class="tl-year">2020 – 2021</span>
+              <h4 class="tl-title">Teaching / Research Assistant</h4>
+              <p class="tl-place"><i class="fas fa-chalkboard-teacher"></i> Your Department</p>
+              <p class="tl-desc">Assisted in undergraduate courses, labs, and project guidance.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot tl-dot--accent"></div>
+            <div class="tl-content">
+              <span class="tl-year">2019</span>
+              <h4 class="tl-title">Research Intern</h4>
+              <p class="tl-place"><i class="fas fa-building"></i> Company / Lab Name</p>
+              <p class="tl-desc">Internship on [topic/project], outcomes: [result].</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <div class="awards-row" data-aos="fade-up">
+      <div class="awards-header"><i class="fas fa-trophy"></i> Awards & Fellowships</div>
+      <div class="awards-grid">
+        <div class="award-card">
+          <i class="fas fa-medal award-icon"></i>
+          <div>
+            <strong>Best Paper Award</strong>
+            <span>Conference Name, 2023</span>
+          </div>
+        </div>
+        <div class="award-card">
+          <i class="fas fa-star award-icon"></i>
+          <div>
+            <strong>National Fellowship / JRF / SRF</strong>
+            <span>UGC / CSIR / DST, Year</span>
+          </div>
+        </div>
+        <div class="award-card">
+          <i class="fas fa-award award-icon"></i>
+          <div>
+            <strong>Travel Grant</strong>
+            <span>Funding Body, Year</span>
+          </div>
+        </div>
+        <div class="award-card">
+          <i class="fas fa-certificate award-icon"></i>
+          <div>
+            <strong>Merit Scholarship</strong>
+            <span>Institution / Govt., Year</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-download-bar" data-aos="fade-up">
+      <p>Want the full CV?</p>
+      <a href="resume.pdf" download class="btn btn-primary"><i class="fas fa-file-pdf"></i> Download Full CV (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PUBLICATIONS ═══════════════════ -->
+<section id="publications" class="section publications-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Research Output</span>
+      <h2 class="section-title">Publications</h2>
+      <p class="section-sub">Peer-reviewed journals, conference papers, book chapters, and preprints.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="pub-filters" data-aos="fade-up">
+      <button class="pub-filter active" data-filter="all">All</button>
+      <button class="pub-filter" data-filter="journal">Journal Articles</button>
+      <button class="pub-filter" data-filter="conference">Conference Papers</button>
+      <button class="pub-filter" data-filter="book">Book Chapters</button>
+      <button class="pub-filter" data-filter="preprint">Preprints</button>
+    </div>
+
+    <div class="pub-list" id="pubList">
+
+      <!-- Publication card template — repeat and update -->
+      <div class="pub-card" data-type="journal" data-aos="fade-up">
+        <div class="pub-badge journal">Journal</div>
+        <div class="pub-body">
+          <h4 class="pub-title">Your Research Paper Title Goes Here: A Comprehensive Study</h4>
+          <p class="pub-authors"><strong>Your Name</strong>, Co-Author A, Co-Author B, et al.</p>
+          <p class="pub-venue"><i class="fas fa-book-open"></i> Journal of [Field], Vol. XX, No. X, pp. XXX–XXX, 2024</p>
+          <div class="pub-meta">
+            <span class="pub-metric"><i class="fas fa-quote-right"></i> 15 Citations</span>
+            <span class="pub-metric"><i class="fas fa-impact"></i> IF: 4.5</span>
+            <span class="pub-metric pub-indexed"><i class="fas fa-check-circle"></i> SCI / Scopus</span>
+          </div>
+        </div>
+        <div class="pub-actions">
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <button class="pub-btn pub-bibtex-btn" onclick="toggleBibtex(this)"><i class="fas fa-code"></i> BibTeX</button>
+        </div>
+        <div class="pub-bibtex" style="display:none">
+          <pre>@article{yourname2024,
+  title   = {Your Research Paper Title},
+  author  = {Your Name and Co-Author A},
+  journal = {Journal of Field},
+  year    = {2024},
+  volume  = {XX},
+  pages   = {XXX--XXX},
+  doi     = {10.xxxx/xxxxx}
+}</pre>
+        </div>
+      </div>
+
+      <div class="pub-card" data-type="conference" data-aos="fade-up">
+        <div class="pub-badge conference">Conference</div>
+        <div class="pub-body">
+          <h4 class="pub-title">Another Research Paper Title: Methodology and Results</h4>
+          <p class="pub-authors"><strong>Your Name</strong>, Supervisor Name, Co-Author C</p>
+          <p class="pub-venue"><i class="fas fa-microphone-alt"></i> Proceedings of [Conference Name] (CONFXX 2023), City, Country</p>
+          <div class="pub-meta">
+            <span class="pub-metric"><i class="fas fa-quote-right"></i> 8 Citations</span>
+            <span class="pub-metric pub-indexed"><i class="fas fa-check-circle"></i> IEEE / ACM / Springer</span>
+          </div>
+        </div>
+        <div class="pub-actions">
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <button class="pub-btn pub-bibtex-btn" onclick="toggleBibtex(this)"><i class="fas fa-code"></i> BibTeX</button>
+        </div>
+        <div class="pub-bibtex" style="display:none">
+          <pre>@inproceedings{yourname2023,
+  title     = {Another Research Paper Title},
+  author    = {Your Name and Co-Author C},
+  booktitle = {Proceedings of CONFXX},
+  year      = {2023}
+}</pre>
+        </div>
+      </div>
+
+      <div class="pub-card" data-type="book" data-aos="fade-up">
+        <div class="pub-badge book">Book Chapter</div>
+        <div class="pub-body">
+          <h4 class="pub-title">Chapter Title: A Review of Techniques in [Domain]</h4>
+          <p class="pub-authors"><strong>Your Name</strong>, Editor(s): Editor A, Editor B</p>
+          <p class="pub-venue"><i class="fas fa-book"></i> Book Title, Springer/Elsevier, Chapter X, pp. XX–XX, 2023</p>
+          <div class="pub-meta">
+            <span class="pub-metric"><i class="fas fa-quote-right"></i> 5 Citations</span>
+          </div>
+        </div>
+        <div class="pub-actions">
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <button class="pub-btn pub-bibtex-btn" onclick="toggleBibtex(this)"><i class="fas fa-code"></i> BibTeX</button>
+        </div>
+        <div class="pub-bibtex" style="display:none">
+          <pre>@incollection{yourname2023b,
+  title     = {Chapter Title},
+  author    = {Your Name},
+  booktitle = {Book Title},
+  publisher = {Springer},
+  year      = {2023}
+}</pre>
+        </div>
+      </div>
+
+      <div class="pub-card" data-type="preprint" data-aos="fade-up">
+        <div class="pub-badge preprint">Preprint</div>
+        <div class="pub-body">
+          <h4 class="pub-title">Preprint Title: Under Review</h4>
+          <p class="pub-authors"><strong>Your Name</strong>, Collaborator D</p>
+          <p class="pub-venue"><i class="fas fa-archive"></i> arXiv:XXXX.XXXXX, 2024 (Under review)</p>
+          <div class="pub-meta">
+            <span class="pub-metric pub-indexed"><i class="fas fa-clock"></i> Under Review</span>
+          </div>
+        </div>
+        <div class="pub-actions">
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv</a>
+          <a href="#" class="pub-btn" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+        </div>
+      </div>
+
+    </div><!-- /pub-list -->
+
+    <div class="pub-scholar-link" data-aos="fade-up">
+      <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" class="btn btn-outline">
+        <i class="fas fa-graduation-cap"></i> View All on Google Scholar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONFERENCES / TALKS ═══════════════════ -->
+<section id="conferences" class="section conferences-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Presentations</span>
+      <h2 class="section-title">Conference Talks & Seminars</h2>
+      <p class="section-sub">International conferences, workshops, invited talks, and special lectures.</p>
+    </div>
+
+    <div class="conf-timeline" data-aos="fade-up">
+
+      <div class="conf-item">
+        <div class="conf-year-badge">2024</div>
+        <div class="conf-card">
+          <div class="conf-type-badge oral">Oral Presentation</div>
+          <h4 class="conf-title">Talk Title / Paper Presented</h4>
+          <div class="conf-details">
+            <span><i class="fas fa-landmark"></i> Conference Name (CONFXX 2024)</span>
+            <span><i class="fas fa-map-marker-alt"></i> City, Country</span>
+            <span><i class="fas fa-calendar-alt"></i> Month, 2024</span>
+          </div>
+          <p class="conf-desc">Brief description of the talk / paper presented and key outcomes or recognition received.</p>
+          <div class="conf-links">
+            <a href="#" class="conf-link"><i class="fas fa-file-powerpoint"></i> Slides</a>
+            <a href="#" class="conf-link"><i class="fab fa-youtube"></i> Video</a>
+            <a href="#" class="conf-link"><i class="fas fa-file-pdf"></i> Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-year-badge">2023</div>
+        <div class="conf-card">
+          <div class="conf-type-badge invited">Invited Talk</div>
+          <h4 class="conf-title">Special Lecture: [Your Topic]</h4>
+          <div class="conf-details">
+            <span><i class="fas fa-landmark"></i> Workshop / Seminar Name</span>
+            <span><i class="fas fa-map-marker-alt"></i> Institution Name, City</span>
+            <span><i class="fas fa-calendar-alt"></i> Month, 2023</span>
+          </div>
+          <p class="conf-desc">Delivered an invited lecture on [topic] for an audience of researchers and students. Topics covered: [points].</p>
+          <div class="conf-links">
+            <a href="#" class="conf-link"><i class="fas fa-file-powerpoint"></i> Slides</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-year-badge">2023</div>
+        <div class="conf-card">
+          <div class="conf-type-badge poster">Poster</div>
+          <h4 class="conf-title">Poster: Your Poster Title</h4>
+          <div class="conf-details">
+            <span><i class="fas fa-landmark"></i> International Symposium on [Field]</span>
+            <span><i class="fas fa-map-marker-alt"></i> City, Country</span>
+            <span><i class="fas fa-calendar-alt"></i> Month, 2023</span>
+          </div>
+          <p class="conf-desc">Presented a research poster on [topic]. Recognized with [Best Poster Award / Mention — if applicable].</p>
+          <div class="conf-links">
+            <a href="#" class="conf-link"><i class="fas fa-image"></i> Poster PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-year-badge">2022</div>
+        <div class="conf-card">
+          <div class="conf-type-badge workshop">Workshop</div>
+          <h4 class="conf-title">Workshop: Hands-on with [Tool / Method]</h4>
+          <div class="conf-details">
+            <span><i class="fas fa-landmark"></i> National Workshop on [Topic]</span>
+            <span><i class="fas fa-map-marker-alt"></i> City, India</span>
+            <span><i class="fas fa-calendar-alt"></i> Month, 2022</span>
+          </div>
+          <p class="conf-desc">Conducted a hands-on workshop for [N] participants on [topic]. Received excellent participant feedback.</p>
+          <div class="conf-links">
+            <a href="#" class="conf-link"><i class="fas fa-file-powerpoint"></i> Material</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /conf-timeline -->
+  </div>
+</section>
+
+<!-- ═══════════════════ TEACHING ═══════════════════ -->
+<section id="teaching" class="section teaching-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Education & Mentoring</span>
+      <h2 class="section-title">Teaching & Supervision</h2>
+      <p class="section-sub">Courses taught, lab sessions, project supervision, and special lectures delivered.</p>
+    </div>
+
+    <div class="teaching-grid">
+
+      <!-- Courses Taught -->
+      <div class="teaching-block" data-aos="fade-right">
+        <div class="tb-header"><i class="fas fa-chalkboard"></i> Courses Taught</div>
+        <div class="course-list">
+          <div class="course-card">
+            <div class="course-code">CS / EC XXX</div>
+            <div class="course-info">
+              <h5>Course Name (e.g., Machine Learning)</h5>
+              <span><i class="fas fa-user-graduate"></i> B.Tech / M.Tech — Year</span>
+              <span><i class="fas fa-university"></i> Your University</span>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-code">CS / EC YYY</div>
+            <div class="course-info">
+              <h5>Another Course (e.g., Data Structures)</h5>
+              <span><i class="fas fa-user-graduate"></i> B.Tech — Year</span>
+              <span><i class="fas fa-university"></i> Your University</span>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-code">LAB ZZZ</div>
+            <div class="course-info">
+              <h5>Lab: [Course Name] Laboratory</h5>
+              <span><i class="fas fa-user-graduate"></i> B.Tech — Year</span>
+              <span><i class="fas fa-university"></i> Your University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Lectures -->
+      <div class="teaching-block" data-aos="fade-left">
+        <div class="tb-header"><i class="fas fa-microphone"></i> Special Lectures</div>
+        <div class="lecture-list">
+          <div class="lecture-card">
+            <div class="lc-icon"><i class="fas fa-star"></i></div>
+            <div class="lc-body">
+              <h5>Special Lecture: [Your Lecture Topic]</h5>
+              <p><i class="fas fa-building"></i> Institution Name, City</p>
+              <p><i class="fas fa-calendar-alt"></i> Month Year</p>
+              <p class="lc-note">Audience: Faculty &amp; students | Topic: [brief]</p>
+            </div>
+          </div>
+          <div class="lecture-card">
+            <div class="lc-icon"><i class="fas fa-star"></i></div>
+            <div class="lc-body">
+              <h5>Guest Lecture: [Another Topic]</h5>
+              <p><i class="fas fa-building"></i> College / Institute Name</p>
+              <p><i class="fas fa-calendar-alt"></i> Month Year</p>
+              <p class="lc-note">Part of [FDP / Workshop / Seminar series]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Students Supervised -->
+      <div class="teaching-block full-width" data-aos="fade-up">
+        <div class="tb-header"><i class="fas fa-users"></i> Students Supervised / Mentored</div>
+        <div class="supervision-table-wrap">
+          <table class="supervision-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Student Name</th>
+                <th>Program</th>
+                <th>Thesis / Project Topic</th>
+                <th>Year</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Student A</td>
+                <td>M.Tech</td>
+                <td>Research Project Title Here</td>
+                <td>2023</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Student B</td>
+                <td>B.Tech</td>
+                <td>Final Year Project Title</td>
+                <td>2024</td>
+                <td><span class="status ongoing">Ongoing</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Student C</td>
+                <td>PhD (co-supervisor)</td>
+                <td>PhD Research Topic</td>
+                <td>2022–</td>
+                <td><span class="status ongoing">Ongoing</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SKILLS ═══════════════════ -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Expertise</span>
+      <h2 class="section-title">Skills & Tools</h2>
+      <p class="section-sub">Technical skills, research tools, programming languages, and soft skills.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-category" data-aos="fade-up">
+        <div class="sc-header"><i class="fas fa-code"></i> Programming</div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">MATLAB</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">R</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-bar-item">
+            <span class="skill-name">C / C++</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            <span class="skill-pct">60%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <div class="sc-header"><i class="fas fa-brain"></i> ML / AI Frameworks</div>
+        <div class="skill-tags">
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">Keras</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">NLTK / spaCy</span>
+          <span class="skill-tag">HuggingFace</span>
+          <span class="skill-tag">Pandas / NumPy</span>
+        </div>
+      </div>
+
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+        <div class="sc-header"><i class="fas fa-tools"></i> Research Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">LaTeX</span>
+          <span class="skill-tag">Overleaf</span>
+          <span class="skill-tag">Mendeley / Zotero</span>
+          <span class="skill-tag">SPSS</span>
+          <span class="skill-tag">Jupyter Notebook</span>
+          <span class="skill-tag">Google Colab</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Git / GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+        <div class="sc-header"><i class="fas fa-heart"></i> Soft Skills</div>
+        <div class="soft-skills-list">
+          <div class="soft-item"><i class="fas fa-check-circle"></i> Academic Writing & Publishing</div>
+          <div class="soft-item"><i class="fas fa-check-circle"></i> Research Proposal Writing</div>
+          <div class="soft-item"><i class="fas fa-check-circle"></i> Peer Reviewing</div>
+          <div class="soft-item"><i class="fas fa-check-circle"></i> Public Speaking & Presentations</div>
+          <div class="soft-item"><i class="fas fa-check-circle"></i> Team Leadership & Collaboration</div>
+          <div class="soft-item"><i class="fas fa-check-circle"></i> Critical Thinking & Problem Solving</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Let's Connect</span>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-sub">I'm open to collaborations, research inquiries, speaking invitations, and general academic discourse.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-col" data-aos="fade-right">
+        <div class="contact-card-item">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">Email</span>
+            <a href="mailto:your@email.com" class="cc-value">your@email.com</a>
+          </div>
+        </div>
+        <div class="contact-card-item">
+          <div class="cc-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">WhatsApp</span>
+            <a href="https://wa.me/yourphone" target="_blank" class="cc-value">+91 XXXXX XXXXX</a>
+          </div>
+        </div>
+        <div class="contact-card-item">
+          <div class="cc-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/yourname" target="_blank" class="cc-value">linkedin.com/in/yourname</a>
+          </div>
+        </div>
+        <div class="contact-card-item">
+          <div class="cc-icon scholar"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">Google Scholar</span>
+            <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" class="cc-value">View Profile</a>
+          </div>
+        </div>
+        <div class="contact-card-item">
+          <div class="cc-icon researchgate"><i class="fab fa-researchgate"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">ResearchGate</span>
+            <a href="https://www.researchgate.net/profile/YourName" target="_blank" class="cc-value">ResearchGate Profile</a>
+          </div>
+        </div>
+        <div class="contact-card-item">
+          <div class="cc-icon orcid"><i class="fab fa-orcid"></i></div>
+          <div class="cc-text">
+            <span class="cc-label">ORCID</span>
+            <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="cc-value">0000-0000-0000-0000</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-col" data-aos="fade-left">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cName">Full Name</label>
+              <input type="text" id="cName" name="name" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email Address</label>
+              <input type="email" id="cEmail" name="email" placeholder="your@email.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cSubject">Subject</label>
+            <input type="text" id="cSubject" name="subject" placeholder="Research Collaboration / Query" required/>
+          </div>
+          <div class="form-group">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note">
+            <i class="fas fa-lock"></i> Your data is safe. This form is powered by 
+            <a href="https://formspree.io" target="_blank">Formspree</a> — no spam, ever.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-dot"></span>
+      <strong>Dr. Your Name</strong>
+    </div>
+    <p class="footer-copy">
+      © <span id="year"></span> Your Name. Built with ♥ and deployed on 
+      <a href="https://netlify.com" target="_blank">Netlify</a>.
+    </p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+      <a href="https://techcrazebk.medium.com/" target="_blank">Blog</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
